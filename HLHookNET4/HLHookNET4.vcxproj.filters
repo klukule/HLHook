@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Managed\HogwartsLegacyHook.cpp" />
+    <ClCompile Include="src\Memory.cpp" />
+    <ClCompile Include="src\Scanner.cpp" />
+    <ClCompile Include="src\UnrealEngine.cpp" />
+    <ClCompile Include="src\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Managed\HogwartsLegacyHook.h" />
+    <ClInclude Include="src\Memory.h" />
+    <ClInclude Include="src\Scanner.h" />
+    <ClInclude Include="src\UnrealEngine.h" />
+    <ClInclude Include="src\Utils.h" />
+  </ItemGroup>
+</Project>
