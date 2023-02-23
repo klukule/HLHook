@@ -21,7 +21,7 @@ namespace HogwartsLegacy {
 		bool Initialize();
 		void GetPlayerPositionAndRotation([System::Runtime::InteropServices::Out] MFVector^% position, [System::Runtime::InteropServices::Out] MFRotator^% rotation);
 
-		void InitializeOverwolf(System::Action<System::Boolean>^ callback);
+		void InitializeOverwolf(System::Action<System::Object^>^ callback);
 		void GetPlayerPositionAndRotationOverwolf(System::Action<System::Object^, System::Object^>^ callback);
 	};
 }

@@ -44,7 +44,7 @@ void HogwartsLegacy::Hook::GetPlayerPositionAndRotation(MFVector^% position, MFR
 	rotation->Roll = RelativeRotation.Roll;
 }
 
-void HogwartsLegacy::Hook::InitializeOverwolf(System::Action<System::Boolean>^ callback)
+void HogwartsLegacy::Hook::InitializeOverwolf(System::Action<System::Object^>^ callback)
 {
 	bool result = Initialize();
 	callback(result);
