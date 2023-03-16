@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HLHook\HLHook.vcxproj" />
+    <ProjectReference Include="..\HLHookNET4\HLHookNET4.vcxproj" />
   </ItemGroup>
 
 </Project>

@@ -34,6 +34,13 @@ void HogwartsLegacy::Hook::GetPlayerPositionAndRotation(MFVector^% position, MFR
 	auto RelativeLocation = Read<FVector>(RootComponent + 0x134);					// Get location
 	auto RelativeRotation = Read<FRotator>(RootComponent + 0x140);					// Get rotation
 
+	auto Parent = Read<char*>(RootComponent + 0xD8);								// Check if we are attached to some parent component (actor, ex. broom)
+
+	if (Parent) {
+		RelativeLocation = Read<FVector>(Parent + 0x134);							// Get location of the broom instead
+		RelativeRotation = Read<FRotator>(Parent + 0x140);							// Get rotation of the broom instead
+	}
+
 	// Copy native to managed
 	position->X = RelativeLocation.X;
 	position->Y = RelativeLocation.Y;
